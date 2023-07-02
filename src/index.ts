@@ -10,7 +10,9 @@ const PORT = process.env.PORT ?? 3000;
 
 app.get("/api/character", async (_req, res) => {
   try {
-    const response = await axios.get(`${process.env.API_CHARACTER}`);
+    const response = await axios.get(
+      "https://rickandmortyapi.com/api/character"
+    );
     const characters = response.data;
     res.json(characters);
   } catch (error) {
