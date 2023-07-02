@@ -31,3 +31,5 @@ Demo petición:
 /api/character/?name=rick
 
 ```
+
+Mas información en la documentación de la API: https://rickandmortyapi.com/documentation/#character
